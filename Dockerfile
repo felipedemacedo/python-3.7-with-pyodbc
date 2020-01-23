@@ -11,7 +11,7 @@ RUN apt-get update \
 && curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - \
 && curl https://packages.microsoft.com/config/debian/9/prod.list  > /etc/apt/sources.list.d/mssql-release.list \
 && apt-get update \
-&& ACCEPT_EULA=Y apt-get -y install --no-install-recommends msodbcsql17=17.2.0.1-1 \
+&& ACCEPT_EULA=Y apt-get -y install --no-install-recommends msodbcsql17=17.4.2.1-1 \
     unixodbc=2.3.4-1 \
     unixodbc-bin=2.3.0-4+b1 \
     unixodbc-dev=2.3.4-1 \
